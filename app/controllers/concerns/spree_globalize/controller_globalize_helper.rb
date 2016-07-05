@@ -11,9 +11,7 @@ module SpreeGlobalize
       private
 
       def globalize_fallbacks
-        # without 'SpreeGlobalize::' this fails saying "uninitialized constant SpreeGlobalize::ControllerGlobalizeHelper::Fallbacks"
-        # in rails5
-        ::SpreeGlobalize::Fallbacks.config!
+        Fallbacks.config!
       end
     end
   end
